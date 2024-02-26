@@ -1,0 +1,66 @@
+//just comments in css
+/*multi-line comments*/
+
+$font-main: Lato, sans-serif;
+$text-primary: rgb(38, 31, 21);
+$text-action: rgb(219, 84, 0);
+$fill-surface: rgb(243, 241, 235);
+$fill-highlight: rgb(233, 228, 217);
+$fill-action: rgb(255, 98, 0);
+$fill-colorless: white;
+
+body {
+  background-color: $fill-surface;
+  color: $text-primary;
+  font-family: $font-main;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+body img {
+  //selects ancestors (children that might be nested deep in body)
+  width: 150px;
+}
+
+h1 {
+  font-size: Ì 3em;
+}
+
+a {
+  cursor: pointer;
+  color: $text-action;
+  &:hover {
+    //pseudo-selector
+    text-decoration: none;
+  }
+}
+
+.button {
+  background-color: $fill-action;
+  text-decoration: none;
+  color: $fill-colorless;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+  &:hover {
+    background-color: darken($fill-action, $amount: 5);
+  }
+}
+
+ol, ul {
+  list-style: none;
+  width: 800px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+li {
+  background-color: $fill-highlight;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#unique {
+  color: rgb(40, 94, 59);
+}

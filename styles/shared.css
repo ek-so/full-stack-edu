@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*multi-line comments*/
+body {
+  background-color: rgb(243, 241, 235);
+  color: rgb(38, 31, 21);
+  font-family: Lato, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+body img {
+  width: 150px;
+}
+
+h1 {
+  font-size: Ì 3em;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(219, 84, 0);
+}
+a:hover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: rgb(255, 98, 0);
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #e65800;
+}
+
+ol, ul {
+  list-style: none;
+  width: 800px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+li {
+  background-color: rgb(233, 228, 217);
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#unique {
+  color: rgb(40, 94, 59);
+}/*# sourceMappingURL=shared.css.map */
