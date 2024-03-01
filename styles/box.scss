@@ -1,0 +1,34 @@
+@import "shared.scss";
+
+.div-block {
+  //display: block by default
+  //width full by default
+  margin: $size-s;
+  padding: $size-s;
+  background-color: $fill-tint2-secondary;
+  color: $text-tint2;
+  border-radius: $size-xxs;
+  // border-color: $text-tint2;
+  // border-width: $size-xs;
+}
+
+.div-inline-block {
+  display: inline-block;
+  width: 200px;
+  margin: $size-xs;
+  padding: $size-xs;
+  background-color: $fill-tint3-secondary;
+  color: $text-tint3;
+  border-radius: $size-xxs;
+}
+
+.div-inline {
+  display: inline;
+  //width doesn't work
+  //height doesn't work
+  margin: $size-xs; //top and bottom doesn't work
+  padding: $size-xs $size-s;
+  background-color: $fill-tint4-secondary;
+  color: $text-tint4;
+  border-radius: $size-xxs;
+}

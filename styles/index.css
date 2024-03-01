@@ -96,4 +96,34 @@ button.secondary:hover {
 .code.tint4 {
   background-color: rgb(215, 188, 233);
   color: rgb(129, 72, 166);
-}/*# sourceMappingURL=shared.css.map */
+}
+
+body img {
+  width: 150px;
+  margin-top: -96px;
+}
+
+#about {
+  background-color: white;
+  width: 1000px;
+  margin: 120px auto 48px auto;
+  padding: 16px 24px 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+ol,
+ul {
+  padding: 0;
+}
+ol li,
+ul li {
+  display: block;
+  margin: 8px auto !important;
+  width: 1000px;
+  background-color: rgb(233, 227, 217);
+  padding: 16px 24px;
+  margin: 8px;
+  border-radius: 8px;
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

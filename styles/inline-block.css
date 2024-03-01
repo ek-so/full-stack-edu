@@ -13,9 +13,8 @@ body {
   background-color: rgb(243, 241, 235);
   color: rgb(38, 31, 21);
   font-family: Lato, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
-  padding: 32px;
 }
 
 h1 {
@@ -32,26 +31,10 @@ h3 {
 
 a {
   cursor: pointer;
+  color: rgb(129, 72, 166);
 }
 a:hover {
   text-decoration: none;
-}
-a.tint1 {
-  color: rgb(210, 81, 0);
-}
-a.tint2 {
-  color: rgb(50, 125, 72);
-}
-a.tint3 {
-  color: rgb(61, 83, 168);
-}
-a.tint4 {
-  color: rgb(129, 72, 166);
-}
-
-li {
-  list-style: inside;
-  padding: 2px;
 }
 
 button {
@@ -77,23 +60,29 @@ button.secondary:hover {
   background-color: #ffb07f;
 }
 
-.code {
-  padding: 0 4px 1px 4px;
-  border-radius: 2px;
-}
-.code.tint1 {
-  background-color: rgb(255, 192, 152);
-  color: rgb(210, 81, 0);
-}
-.code.tint2 {
+.div-block {
+  margin: 16px;
+  padding: 16px;
   background-color: rgb(204, 224, 210);
   color: rgb(50, 125, 72);
+  border-radius: 4px;
 }
-.code.tint3 {
+
+.div-inline-block {
+  display: inline-block;
+  width: 200px;
+  margin: 8px;
+  padding: 8px;
   background-color: rgb(178, 190, 241);
   color: rgb(61, 83, 168);
+  border-radius: 4px;
 }
-.code.tint4 {
+
+.div-inline {
+  display: inline;
+  margin: 8px;
+  padding: 8px;
   background-color: rgb(215, 188, 233);
   color: rgb(129, 72, 166);
-}/*# sourceMappingURL=shared.css.map */
+  border-radius: 4px;
+}/*# sourceMappingURL=inline-block.css.map */

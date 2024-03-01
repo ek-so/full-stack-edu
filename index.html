@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <header></header>
@@ -23,35 +24,34 @@
       <section></section>
       <aside></aside>
       <!--sidebar-->
-      <img src="assets/images/blocks.png" alt="blocks" />
       <!-- image is treated like text-->
       <h1>100 days of code</h1>
-      <h2>Full stack development course</h2>
-      <h3>List of the most important elements</h3>
-      <p>
-        Elements and theory described in
-        <a
-          href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING"
-          >the course</a
-        >
-      </p>
-      <p id="unique">
-        This paragraph is <strong>unique</strong> (has "unigue" ID)
-      </p>
-      <p>If I want to put &gt; or &lt; in a paragraph as simple text</p>
-      <h3>Ordered list</h3>
-      <ol>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-      </ol>
-      <h3>Unordered list</h3>
+      <div id="about">
+        <img src="assets/images/blocks.png" alt="blocks" />
+        <h2>Full stack development course</h2>
+        <p>
+          <strong>The most important</strong> HTML & CSS
+          <span class="code tint1">&lt;elements&gt;</span>, JS scripts and
+          theory described in
+          <a
+            class="tint1"
+            href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING"
+            >the course</a
+          >
+        </p>
+        <button class="primary">Primary button</button>
+        <button class="secondary">Secondary button</button>
+      </div>
+
+      <h3>HTML & CSS</h3>
       <ul>
-        <li>Inheritance (from parent to child)</li>
-        <li>Cascading logics (order)</li>
-        <li>Specificity (children selectors are more specific)</li>
+        <!-- Unordered list. For ordered use <ol> -->
+        <li>
+          <a class="tint1" href="excercises/box.html"
+            >Inline and block elements. Box model</a
+          >
+        </li>
       </ul>
-      <a class="button" href="addition.html">Additional page</a>
     </main>
     <footer></footer>
   </body>

@@ -96,4 +96,31 @@ button.secondary:hover {
 .code.tint4 {
   background-color: rgb(215, 188, 233);
   color: rgb(129, 72, 166);
-}/*# sourceMappingURL=shared.css.map */
+}
+
+.div-block {
+  margin: 16px;
+  padding: 16px;
+  background-color: rgb(204, 224, 210);
+  color: rgb(50, 125, 72);
+  border-radius: 4px;
+}
+
+.div-inline-block {
+  display: inline-block;
+  width: 200px;
+  margin: 8px;
+  padding: 8px;
+  background-color: rgb(178, 190, 241);
+  color: rgb(61, 83, 168);
+  border-radius: 4px;
+}
+
+.div-inline {
+  display: inline;
+  margin: 8px;
+  padding: 8px 16px;
+  background-color: rgb(215, 188, 233);
+  color: rgb(129, 72, 166);
+  border-radius: 4px;
+}/*# sourceMappingURL=box.css.map */

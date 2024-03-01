@@ -1,66 +1,136 @@
 //just comments in css
 /*multi-line comments*/
 
+/*
+descendant selector (space) – all children of this parent
+child selector (>) – only direct children of this parent
+adjacent sibling selector (+)
+general sibling selector (~)
+All the same rules apply in scss:
+h2 {
+  + p {}
+} */
+
 $font-main: Lato, sans-serif;
 $text-primary: rgb(38, 31, 21);
-$text-action: rgb(219, 84, 0);
+$text-tint1: rgb(210, 81, 0);
+$text-tint2: rgb(50, 125, 72);
+$text-tint3: rgb(61, 83, 168);
+$text-tint4: rgb(129, 72, 166);
+
 $fill-surface: rgb(243, 241, 235);
-$fill-highlight: rgb(233, 228, 217);
-$fill-action: rgb(255, 98, 0);
-$fill-colorless: white;
+$fill-highlight: rgb(233, 227, 217);
+
+$fill-tint1-primary: rgb(255, 98, 0);
+$fill-tint1-secondary: rgb(255, 192, 152);
+$fill-tint2-primary: rgb(77, 145, 97);
+$fill-tint2-secondary: rgb(204, 224, 210);
+$fill-tint3-primary: rgb(100, 122, 208);
+$fill-tint3-secondary: rgb(178, 190, 241);
+$fill-tint4-primary: rgb(122, 83, 148);
+$fill-tint4-secondary: rgb(215, 188, 233);
+
+$size-min: 1px;
+$size-xxxs: 2px;
+$size-xxs: 4px;
+$size-xs: 8px;
+$size-s: 16px;
+$size-m: 24px;
+$size-l: 32px;
+$size-xl: 48px;
+$size-xxl: 96px;
+$size-xxxl: 120px;
+$size-4xl: 200px;
+$size-max: 1000px;
+
+$shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
 
 body {
   background-color: $fill-surface;
   color: $text-primary;
   font-family: $font-main;
-  font-size: 1.1em;
+  font-size: 1rem;
   text-align: center;
-}
-
-body img {
-  //selects ancestors (children that might be nested deep in body)
-  width: 150px;
+  padding: $size-l;
 }
 
 h1 {
-  font-size: Ì 3em;
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 a {
   cursor: pointer;
-  color: $text-action;
   &:hover {
     //pseudo-selector
     text-decoration: none;
   }
-}
-
-.button {
-  background-color: $fill-action;
-  text-decoration: none;
-  color: $fill-colorless;
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 10px;
-  &:hover {
-    background-color: darken($fill-action, $amount: 5);
+  &.tint1 {
+    color: $text-tint1;
+  }
+  &.tint2 {
+    color: $text-tint2;
+  }
+  &.tint3 {
+    color: $text-tint3;
+  }
+  &.tint4 {
+    color: $text-tint4;
   }
 }
 
-ol, ul {
-  list-style: none;
-  width: 800px;
-  margin: 10px auto;
-  padding: 0;
-}
-
 li {
-  background-color: $fill-highlight;
-  padding: 5px 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+  list-style: inside;
+  padding: $size-xxxs;
 }
 
-#unique {
-  color: rgb(40, 94, 59);
+button {
+  display: inline-block;
+  padding: $size-s $size-l;
+  margin: $size-xs;
+  border-radius: $size-xs;
+  border: none;
+  font-size: 1rem;
+  &.primary {
+    background-color: $fill-tint1-primary;
+    color: white;
+    &:hover {
+      background-color: darken($fill-tint1-primary, $amount: 5);
+    }
+  }
+  &.secondary {
+    background-color: $fill-tint1-secondary;
+    color: $text-tint1;
+    &:hover {
+      background-color: darken($fill-tint1-secondary, $amount: 5);
+    }
+  }
+}
+
+.code {
+  padding: 0 $size-xxs $size-min $size-xxs;
+  border-radius: $size-xxxs;
+  &.tint1 {
+    background-color: $fill-tint1-secondary;
+    color: $text-tint1;
+  }
+  &.tint2 {
+    background-color: $fill-tint2-secondary;
+    color: $text-tint2;
+  }
+  &.tint3 {
+    background-color: $fill-tint3-secondary;
+    color: $text-tint3;
+  }
+  &.tint4 {
+    background-color: $fill-tint4-secondary;
+    color: $text-tint4;
+  }
 }

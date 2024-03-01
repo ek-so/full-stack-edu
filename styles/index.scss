@@ -1,0 +1,31 @@
+@import "shared.scss";
+
+body img {
+  //selects ancestors (children that might be nested deep in body)
+  width: 150px;
+  margin-top: -$size-xxl;
+}
+
+#about {
+  background-color: white;
+  width: $size-max;
+  margin: $size-xxxl auto $size-xl auto;
+  padding: $size-s $size-m $size-l $size-m;
+  border-radius: $size-s;
+  box-shadow: $shadow;
+}
+
+ol,
+ul {
+  padding: 0;
+  li {
+    display: block;
+    margin: $size-xs auto !important;
+    width: $size-max;
+    background-color: $fill-highlight;
+    padding: $size-s $size-m;
+    margin: $size-xs;
+    border-radius: $size-xs;
+    list-style: none;
+  }
+}
