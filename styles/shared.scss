@@ -51,7 +51,7 @@ body {
   font-family: $font-main;
   font-size: 1rem;
   text-align: center;
-  padding: $size-l;
+  margin: 0;
 }
 
 h1 {
@@ -83,6 +83,42 @@ a {
   }
   &.tint4 {
     color: $text-tint4;
+  }
+}
+
+header {
+  display: flex;
+  // flex-direction: row; applied by default
+  flex-wrap: wrap; //items will jump to the next line if there is too little space
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $shadow;
+  padding: $size-xs $size-l;
+  & img {
+    width: 36px;
+  }
+
+  nav {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    & ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: end;
+      & li {
+        padding: $size-xs;
+      }
+      & a {
+        text-decoration: none;
+        color: $text-primary;
+        &:hover {
+          color: $text-tint1;
+        }
+      }
+    }
   }
 }
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <link />
+  <!--opening tag-->
   <head>
-    <!--opening tag-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100 days of code</title>
@@ -14,46 +14,64 @@
     />
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <script scr="/scripts/index.js"></script>
   </head>
   <body>
-    <header></header>
-    <nav></nav>
-    <!--navigation bar-->
+    <header>
+      <!--navigation bar-->
+      <div id="page-logo">
+        <a href="/"><img src="/assets/icons/code.png" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Menu one</a></li>
+          <li><a href="/">Menu two</a></li>
+          <li><a href="/">Menu three</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <article></article>
-      <section></section>
       <aside></aside>
       <!--sidebar-->
       <!-- image is treated like text-->
       <h1>100 days of code</h1>
-      <div id="about">
-        <img src="assets/images/blocks.png" alt="blocks" />
-        <h2>Full stack development course</h2>
-        <p>
-          <strong>The most important</strong> HTML & CSS
-          <span class="code tint1">&lt;elements&gt;</span>, JS scripts and
-          theory described in
-          <a
-            class="tint1"
-            href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING"
-            >the course</a
-          >
-        </p>
-        <button class="primary">Primary button</button>
-        <button class="secondary">Secondary button</button>
-      </div>
-
-      <h3>HTML & CSS</h3>
-      <ul>
-        <!-- Unordered list. For ordered use <ol> -->
-        <li>
-          <a class="tint1" href="excercises/box.html"
-            >Inline and block elements. Box model</a
-          >
-        </li>
-      </ul>
+      <section>
+        <div id="about">
+          <img src="assets/images/blocks.png" alt="blocks" />
+          <h2>Full stack development course</h2>
+          <p>
+            <strong>The most important</strong> HTML & CSS
+            <span class="code tint1">&lt;elements&gt;</span>, JS scripts and
+            theory described in
+            <a
+              class="tint1"
+              href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING"
+              >the course</a
+            >
+          </p>
+          <button class="primary">Primary button</button>
+          <button class="secondary">Secondary button</button>
+        </div>
+      </section>
+      <section id="list">
+        <h3>HTML & CSS</h3>
+        <ul>
+          <!-- Unordered list. For ordered use <ol> -->
+          <li>
+            <a class="tint1" href="excercises/box.html"
+              >Inline and block elements. Box model</a
+            >
+          </li>
+          <li>
+            <a class="tint1" href="excercises/flex.html"
+              >Flex, table and page structure</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer></footer>
+    <footer><p>2024</p></footer>
   </body>
   <!--closing tag-->
 </html>
