@@ -68,6 +68,7 @@ h3 {
 
 a {
   cursor: pointer;
+  font-weight: bold;
   &:hover {
     //pseudo-selector
     text-decoration: none;
@@ -86,7 +87,6 @@ a {
   }
   &.primary {
     color: $text-primary;
-    font-weight: bold;
   }
 }
 
