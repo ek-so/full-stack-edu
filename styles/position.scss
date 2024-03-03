@@ -1,0 +1,70 @@
+@import "shared.scss";
+
+h1 {
+    margin-top: 150px;
+}
+
+#container {
+  background-color: $fill-highlight;
+  padding: $size-m;
+  height: 200vh;
+  margin: $size-m;
+  border-radius: $size-xs;
+  width: 80%;
+}
+
+.child {
+  padding: $size-m;
+  border-radius: $size-xxs;
+}
+
+#static {
+  background-color: $fill-tint1-secondary;
+  color: $text-tint1;
+  border: 2px solid $text-tint1;
+  position: static; //default
+  top: 20px; //doesn't work
+  width: 80%;
+}
+
+#relative {
+  background-color: $fill-tint2-secondary;
+  border: 2px solid $text-tint2;
+  color: $text-tint2;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+}
+
+#fixed {
+  background-color: $fill-tint3-secondary;
+  color: $text-tint3;
+  border: 2px solid $text-tint3;
+  position: fixed;
+  top: 0; //from top left corner of document
+  left: 0;
+  width: 100%;
+  box-sizing: content-box;//default
+}
+
+#absolute {
+  background-color: $fill-tint4-secondary;
+  color: $text-tint4;
+  border: 2px solid $text-tint4;
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sticky {
+  background-color: $fill-tint3-secondary;
+  color: $text-tint3;
+  border: 2px solid $text-tint3;
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+}

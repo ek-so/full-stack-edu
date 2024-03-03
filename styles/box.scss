@@ -8,6 +8,7 @@
   background-color: $fill-tint2-secondary;
   color: $text-tint2;
   border-radius: $size-xxs;
+  border: $size-xs solid $text-tint2;
   // border-color: $text-tint2;
   // border-width: $size-xs;
 }
@@ -20,6 +21,7 @@
   background-color: $fill-tint3-secondary;
   color: $text-tint3;
   border-radius: $size-xxs;
+  border: $size-xxs solid $text-tint3;
 }
 
 .div-inline {
@@ -31,4 +33,5 @@
   background-color: $fill-tint4-secondary;
   color: $text-tint4;
   border-radius: $size-xxs;
+  border: $size-xxs solid $text-tint4;
 }

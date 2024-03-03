@@ -17,8 +17,10 @@ main img {
 
 #list {
   background-image: url(/assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
   padding: $size-xl;
-  border-radius: $size-l;
+  border-radius: $size-m;
   & h3 {
     color: white;
   }
@@ -27,14 +29,14 @@ main img {
 main ol,
 main ul {
   padding: 0;
+  list-style: none;
   li {
     display: block;
     margin: $size-xs auto !important;
     width: $size-max;
-    background-color: $fill-highlight;
     padding: $size-s $size-m;
-    margin: $size-xs;
+    background-color: white;
     border-radius: $size-xs;
-    list-style: none;
+    box-shadow: $shadow;
   }
 }

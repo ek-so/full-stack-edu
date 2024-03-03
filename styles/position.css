@@ -137,4 +137,73 @@ button.secondary:hover {
 .code.tint4 {
   background-color: rgb(215, 188, 233);
   color: rgb(129, 72, 166);
-}/*# sourceMappingURL=shared.css.map */
+}
+
+h1 {
+  margin-top: 150px;
+}
+
+#container {
+  background-color: rgb(233, 227, 217);
+  padding: 24px;
+  height: 200vh;
+  margin: 24px;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.child {
+  padding: 24px;
+  border-radius: 4px;
+}
+
+#static {
+  background-color: rgb(255, 192, 152);
+  color: rgb(210, 81, 0);
+  border: 2px solid rgb(210, 81, 0);
+  position: static;
+  top: 20px;
+  width: 80%;
+}
+
+#relative {
+  background-color: rgb(204, 224, 210);
+  border: 2px solid rgb(50, 125, 72);
+  color: rgb(50, 125, 72);
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+}
+
+#fixed {
+  background-color: rgb(178, 190, 241);
+  color: rgb(61, 83, 168);
+  border: 2px solid rgb(61, 83, 168);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+#absolute {
+  background-color: rgb(215, 188, 233);
+  color: rgb(129, 72, 166);
+  border: 2px solid rgb(129, 72, 166);
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sticky {
+  background-color: rgb(178, 190, 241);
+  color: rgb(61, 83, 168);
+  border: 2px solid rgb(61, 83, 168);
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+}/*# sourceMappingURL=position.css.map */
