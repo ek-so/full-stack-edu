@@ -11,32 +11,91 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/shared.css" />
-    <link rel="stylesheet" href="/styles/inline-block.css" />
+    <link rel="stylesheet" href="/styles/flex/flex.css" />
     <script scr="/scripts/index.js"></script>
   </head>
   <body>
     <main>
       <h1>Flex, table and page structure</h1>
       <a class="tint1" href="/index.html">Back to main page</a>
-      <br /><a
-        class="primary"
-        href="https://academind.com/tutorials/flexbox-basics-container/"
-        target="_blank"
-        >Flexbox</a
-      >
-      <br /><a
-        class="primary"
-        href="https://academind.com/tutorials/flexbox-flex-items/"
-        target="_blank"
-        >Flex items</a
-      >
-      <br /><a
-        class="primary"
-        href="https://academind.com/tutorials/css-grid-vs-flexbox/"
-        target="_blank"
-        >Grid layout</a
-      >
-      <section></section>
+      <section>
+        <h2>Flex</h2>
+        <a
+          class="primary"
+          href="https://academind.com/tutorials/flexbox-basics-container/"
+          target="_blank"
+          >Flexbox</a
+        >
+        <br /><a
+          class="primary"
+          href="https://academind.com/tutorials/flexbox-flex-items/"
+          target="_blank"
+          >Flex items</a
+        >
+        <ul id="flex-container">
+          <li>
+            <img src="/assets/images/flex-1.png" alt="flex" />
+            <p class="title">1st title</p>
+            <p>1st description</p>
+          </li>
+          <li>
+            <img src="/assets/images/flex-2.png" alt="flex" />
+            <p class="title">2nd title</p>
+            <p>2nd description</p>
+          </li>
+          <li>
+            <img src="/assets/images/flex-3.png" alt="flex" />
+            <p class="title">3rd title</p>
+            <p>2rd description</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Grid</h2>
+        <br /><a
+          class="primary"
+          href="https://academind.com/tutorials/css-grid-vs-flexbox/"
+          target="_blank"
+          >Grid layout</a
+        >
+        <ul id="grid">
+          <li>
+            <div class="img">Image</div>
+            <div class="content">
+              <p>One</p>
+              <button>Button &#x2192</button>
+            </div>
+          </li>
+          <li>
+            <div class="img">Image</div>
+            <div class="content">
+              <p>Two</p>
+              <button>Button &#x2192</button>
+            </div>
+          </li>
+          <li>
+            <div class="img">Image</div>
+            <div class="content">
+              <p>Three. Using <span class="tint2">nth-of-type</span> selector</p>
+              <button>Button text</button>
+            </div>
+          </li>
+          <li>
+            <div class="img">Image</div>
+            <div class="content">
+              <p>Four</p>
+              <button>Button &#x2192</button>
+            </div>
+          </li>
+          <li>
+            <div class="img">Image</div>
+            <div class="content">
+              <p>Five</p>
+              <button>Button &#x2192</button>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>

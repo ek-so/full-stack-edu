@@ -1,0 +1,42 @@
+@import "../shared.scss";
+
+main img {
+  //selects ancestors (children that might be nested deep in body)
+  width: 150px;
+  margin-top: -$size-xxl;
+}
+
+#about {
+  background-color: white;
+  width: $size-max;
+  margin: $size-xxxl auto $size-xl auto;
+  padding: $size-s $size-m $size-l $size-m;
+  border-radius: $size-s;
+  box-shadow: $shadow;
+}
+
+#list {
+  background-image: url(/assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: $size-xl;
+  border-radius: $size-m;
+  & h3 {
+    color: white;
+  }
+}
+
+main ol,
+main ul {
+  padding: 0;
+  list-style: none;
+  li {
+    display: block;
+    margin: $size-xs auto !important;
+    width: $size-max;
+    padding: $size-s $size-m;
+    background-color: white;
+    border-radius: $size-xs;
+    box-shadow: $shadow;
+  }
+}

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*multi-line comments*/
+/*
+descendant selector (space) – all children of this parent
+child selector (>) – only direct children of this parent
+adjacent sibling selector (+)
+general sibling selector (~)
+All the same rules apply in scss:
+h2 {
+  + p {}
+} */
+body {
+  margin: 0;
+  background-color: rgb(243, 241, 235);
+  color: rgb(38, 31, 21);
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(243, 241, 235), rgb(233, 227, 217));
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+a {
+  cursor: pointer;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+}
+a.tint1 {
+  color: rgb(210, 81, 0);
+}
+a.tint2 {
+  color: rgb(50, 125, 72);
+}
+a.tint3 {
+  color: rgb(61, 83, 168);
+}
+a.tint4 {
+  color: rgb(129, 72, 166);
+}
+a.primary {
+  color: rgb(38, 31, 21);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(243, 241, 235);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+  padding: 16px 32px;
+}
+header img {
+  width: 36px;
+}
+header nav {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: end;
+}
+header nav ul li {
+  list-style: none;
+  padding: 8px;
+}
+header nav ul a {
+  text-decoration: none;
+  color: rgb(38, 31, 21);
+}
+header nav ul a:hover {
+  color: rgb(210, 81, 0);
+}
+
+li {
+  list-style: inside;
+  padding: 2px;
+}
+
+button {
+  display: inline-block;
+  padding: 16px 32px;
+  margin: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+button.primary {
+  background-color: rgb(255, 98, 0);
+  color: white;
+}
+button.primary:hover {
+  background-color: #e65800;
+}
+button.secondary {
+  background-color: rgb(255, 192, 152);
+  color: rgb(210, 81, 0);
+}
+button.secondary:hover {
+  background-color: #ffb07f;
+}
+
+.code {
+  padding: 0 4px 1px 4px;
+  border-radius: 2px;
+}
+.code.tint1 {
+  background-color: rgb(255, 192, 152);
+  color: rgb(210, 81, 0);
+}
+.code.tint2 {
+  background-color: rgb(204, 224, 210);
+  color: rgb(50, 125, 72);
+}
+.code.tint3 {
+  background-color: rgb(178, 190, 241);
+  color: rgb(61, 83, 168);
+}
+.code.tint4 {
+  background-color: rgb(215, 188, 233);
+  color: rgb(129, 72, 166);
+}
+
+footer {
+  padding: 32px 0;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+footer li {
+  width: 32px;
+  list-style: none;
+}
+footer img {
+  width: 100%;
+}
+
+section {
+  padding: 4px; /*this just removes margin collapsing for child elements: 
+in this case, header top margin was not counted in a height flow 
+and was removed until we add this padding*/
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin: 24px auto;
+  width: 90%;
+}
+#flex-container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#flex-container li {
+  width: 100%;
+  padding: 16px;
+  margin: 8px;
+  list-style: none;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 32px;
+}
+#flex-container .title {
+  margin: 24px 16px 8px 16px;
+  color: rgb(210, 81, 0);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#flex-container p {
+  margin: 8px 16px 24px 16px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+  padding-left: 0;
+  width: 90%;
+  margin: 24px auto;
+  text-align: left;
+}
+#grid li {
+  list-style: none;
+  background-color: rgb(255, 192, 152);
+  padding: 0;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#grid li:nth-of-type(3) {
+  background-color: rgb(178, 190, 241);
+  grid-column: 1/3; /*because 2 number is for gap between 1 and 3 rows; 
+so we say that element occupies position from 1 to 3*/
+}
+#grid .img {
+  padding: 24px 48px;
+  background-color: rgb(204, 224, 210);
+  color: rgb(50, 125, 72);
+}
+#grid .content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+}
+#grid .content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+#grid .content p {
+  margin-top: 0;
+  font-weight: bold;
+}/*# sourceMappingURL=flex.css.map */

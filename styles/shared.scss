@@ -52,6 +52,7 @@ body {
   font-family: $font-main;
   font-size: 1rem;
   text-align: center;
+  background: linear-gradient(180deg, $fill-surface, $fill-highlight);
 }
 
 h1 {
@@ -100,7 +101,7 @@ header {
   justify-content: space-between;
   background-color: $fill-surface;
   box-shadow: $shadow;
-  padding: $size-xs $size-l;
+  padding: $size-s $size-l;
   & img {
     width: 36px;
   }
@@ -175,5 +176,21 @@ button {
   &.tint4 {
     background-color: $fill-tint4-secondary;
     color: $text-tint4;
+  }
+}
+
+footer {
+  padding: $size-l 0;
+  & ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  & li {
+    width: $size-l;
+    list-style: none;
+  }
+  & img {
+    width: 100%;
   }
 }

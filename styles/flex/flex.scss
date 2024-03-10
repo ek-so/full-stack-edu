@@ -1,0 +1,86 @@
+@import "../shared.scss";
+
+section {
+  padding: $size-xxs; /*this just removes margin collapsing for child elements: 
+  in this case, header top margin was not counted in a height flow 
+  and was removed until we add this padding*/
+}
+
+#flex-container {
+  display: flex; //makes items inside displayed in a flex row
+  flex-direction: row; //default
+  padding-left: 0;
+  margin: $size-m auto;
+  width: 90%;
+  & img {
+    width: 100%; //makes img have the same width as cards
+    height: $size-4xl;
+    border-radius: $size-s;
+    object-fit: cover; //resolves image stretching
+  }
+  & li {
+    // justify-content property might be applied to center children if we need
+    width: 100%; //makes cards occupy same width
+    padding: $size-s;
+    margin: $size-xs;
+    list-style: none;
+    background-color: white;
+    box-shadow: $shadow;
+    border-radius: $size-l;
+  }
+  & .title {
+    margin: $size-m $size-s $size-xs $size-s;
+    color: $text-tint1;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  & p {
+    margin: $size-xs $size-s $size-m $size-s;
+  }
+}
+
+#grid {
+  display: grid; //makes items inside displayed in a flex row
+  grid-template-columns: 1fr 1fr;
+  gap: $size-s $size-l; //hor and ver gaps
+  padding-left: 0;
+  width: 90%;
+  margin: $size-m auto;
+  text-align: left;
+  & li {
+    list-style: none;
+    background-color: $fill-tint1-secondary;
+    padding: 0;
+    display: flex;
+    border-radius: $size-s;
+    overflow: hidden;
+    &:nth-of-type(3) {
+      //selects N child
+      background-color: $fill-tint3-secondary;
+      grid-column: 1 / 3; /*because 2 number is for gap between 1 and 3 rows; 
+      so we say that element occupies position from 1 to 3*/
+      //grid-column: 1 / span 2; — same effect
+    }
+  }
+  & .img {
+    padding: $size-m $size-xl;
+    background-color: $fill-tint2-secondary;
+    color: $text-tint2;
+  }
+  & .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $size-m;
+    width: 100%;
+    & button {
+      width: fit-content; //button fits text
+      margin: 0;
+    }
+    & p {
+        margin-top: 0;
+        font-weight: bold;
+    }
+  }
+}
