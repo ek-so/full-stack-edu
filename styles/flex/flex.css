@@ -164,7 +164,7 @@ and was removed until we add this padding*/
 
 #flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row nowrap;
   padding-left: 0;
   margin: 24px auto;
   width: 90%;
@@ -238,4 +238,47 @@ so we say that element occupies position from 1 to 3*/
 #grid .content p {
   margin-top: 0;
   font-weight: bold;
+}
+
+#structure {
+  height: 400px;
+  width: 90%;
+  margin: 32px auto;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas: "hdr hdr" "sbr mn" "ftr ftr";
+}
+#structure header {
+  grid-area: hdr;
+  background-color: rgb(255, 192, 152);
+  box-shadow: none;
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+}
+#structure aside {
+  grid-area: sbr;
+  background-color: rgb(204, 224, 210);
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+}
+#structure main {
+  grid-area: mn;
+  background-color: rgb(178, 190, 241);
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+}
+#structure footer {
+  grid-area: ftr;
+  background-color: rgb(215, 188, 233);
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=flex.css.map */

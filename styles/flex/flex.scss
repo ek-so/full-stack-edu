@@ -8,7 +8,8 @@ section {
 
 #flex-container {
   display: flex; //makes items inside displayed in a flex row
-  flex-direction: row; //default
+  //inline-flex — container fits content
+  flex-direction: row nowrap; //default
   padding-left: 0;
   margin: $size-m auto;
   width: 90%;
@@ -20,6 +21,7 @@ section {
   }
   & li {
     // justify-content property might be applied to center children if we need
+    //by default, width of items decreases up to the point when content is visible
     width: 100%; //makes cards occupy same width
     padding: $size-s;
     margin: $size-xs;
@@ -79,8 +81,49 @@ section {
       margin: 0;
     }
     & p {
-        margin-top: 0;
-        font-weight: bold;
+      margin-top: 0;
+      font-weight: bold;
     }
+  }
+}
+
+@mixin align-area-content { //a code chunk that will be included for all content areas below
+  display: flex; //flex can be easily combined with grid
+  padding: $size-s $size-l;
+  align-items: center;
+  justify-content: center;
+}
+
+#structure {
+  height: 400px;
+  width: 90%;
+  margin: $size-l auto;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas:
+    "hdr hdr" //header area takes 2 columns in 1st row
+    "sbr mn"
+    "ftr ftr";
+  & header {
+    grid-area: hdr;
+    background-color: $fill-tint1-secondary;
+    box-shadow: none;
+    @include align-area-content;
+  }
+  & aside {
+    grid-area: sbr;
+    background-color: $fill-tint2-secondary;
+    @include align-area-content;
+  }
+  & main {
+    grid-area: mn;
+    background-color: $fill-tint3-secondary;
+    @include align-area-content;
+  }
+  & footer {
+    grid-area: ftr;
+    background-color: $fill-tint4-secondary;
+    @include align-area-content;
   }
 }
