@@ -22,7 +22,7 @@ h1 {
   background-color: $fill-tint1-secondary;
   color: $text-tint1;
   border: 2px solid $text-tint1;
-  position: static; //default
+  position: static; //default for all elements
   top: 20px; //doesn't work
   width: 80%;
 }

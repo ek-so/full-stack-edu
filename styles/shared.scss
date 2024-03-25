@@ -92,8 +92,7 @@ a {
 }
 
 header {
-  display: flex;
-  // flex-direction: row; applied by default
+  display: flex; // flex-direction: row; applied by default
   flex-wrap: wrap; //items will jump to the next line if there is too little space
   position: sticky;
   top: 0;
