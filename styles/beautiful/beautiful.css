@@ -154,4 +154,83 @@ footer li {
 }
 footer img {
   width: 100%;
+}
+
+/*--color-grey-900: rgb(3, 3, 3);
+color: var(--color-grey-900); – that is how css variables are defined*/
+body {
+  height: 100vh;
+}
+
+#cards-container {
+  display: flex;
+  width: 90%;
+  margin: 1rem auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  width: 3rem;
+  margin: 10px auto;
+  color: rgb(61, 83, 168);
+}
+
+.card {
+  flex: 1 1;
+  min-width: 320px;
+  border-radius: 4px;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease-in 0.1s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card h2 {
+  font-family: "Sanchez", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 3rem 3rem 1rem 3rem;
+  transition: color 0.2s ease-out;
+}
+.card h2:hover {
+  color: rgb(61, 83, 168);
+}
+
+.card-info {
+  margin: 0;
+  padding: 0 3rem 2rem 3rem;
+}
+
+.price {
+  font-family: "Sanchez", sans-serif;
+  font-size: 2.5rem;
+  color: rgb(210, 81, 0);
+  background-color: rgb(255, 192, 152);
+  box-shadow: 0 5px 10px rgba(254, 106, 0, 0.2);
+  padding: 1.5rem 3rem;
+  margin: 0;
+}
+
+.price-info {
+  color: rgb(138, 135, 130);
+  margin: 0;
+  padding: 1rem 3rem;
+  font-size: 0.8rem;
+}
+
+.button-container {
+  margin: 0;
+  padding: 1rem 3rem 3rem 3rem;
+}
+.button-container button {
+  padding: 24px 40px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+.button-container button:hover {
+  background-color: rgb(100, 122, 208);
 }/*# sourceMappingURL=beautiful.css.map */

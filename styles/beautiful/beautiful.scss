@@ -1,1 +1,83 @@
 @import "../shared.scss";
+
+/*--color-grey-900: rgb(3, 3, 3);
+color: var(--color-grey-900); – that is how css variables are defined*/
+
+body {
+  height: 100vh;
+}
+
+#cards-container {
+  display: flex;
+  width: 90%;
+  margin: 1rem auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+    width: 3rem;
+    margin: 10px auto;
+    color: $text-tint3;
+}
+
+.card {
+  flex: 1 1;
+  min-width: 320px;
+  border-radius: 4px;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: $shadow;
+  transition: transform 0.3s ease-in 0.1s; //transition applies to INITIAL STATE of the element
+  // Property + duration + timing function + delay
+  // Property it refers to might be different, but here we use TRANSFORM
+  &:hover {
+    transform: scale(1.05); //transform on hover
+  }
+  & h2 {
+    font-family: "Sanchez", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3rem 3rem 1rem 3rem;
+    transition: color 0.2s ease-out; //here we change COLOR on hover, no delay
+    &:hover {
+      color: $text-tint3; //change color on hover
+    }
+  }
+}
+
+.card-info {
+  margin: 0;
+  padding: 0 3rem 2rem 3rem;
+}
+
+.price {
+  font-family: "Sanchez", sans-serif;
+  font-size: 2.5rem;
+  color: $text-tint1;
+  background-color: $fill-tint1-secondary;
+  box-shadow: 0 5px 10px rgba(254, 106, 0, 0.2);
+  padding: 1.5rem 3rem;
+  margin: 0;
+}
+
+.price-info {
+  color: $text-secondary;
+  margin: 0;
+  padding: 1rem 3rem;
+  font-size: 0.8rem;
+}
+
+.button-container {
+  margin: 0;
+  padding: 1rem 3rem 3rem 3rem;
+  & button {
+    padding: 24px 40px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+        background-color: $fill-tint3-primary;
+    }
+  }
+}

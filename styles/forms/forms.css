@@ -154,44 +154,4 @@ footer li {
 }
 footer img {
   width: 100%;
-}
-
-main img {
-  width: 150px;
-  margin-top: -96px;
-}
-
-#about {
-  background-color: white;
-  width: 1000px;
-  margin: 120px auto 48px auto;
-  padding: 16px 24px 32px 24px;
-  border-radius: 16px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-}
-
-#list {
-  background-image: url(/assets/images/background.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 48px;
-}
-#list h3 {
-  color: white;
-}
-
-main ol,
-main ul {
-  padding: 0;
-  list-style: none;
-}
-main ol li,
-main ul li {
-  display: block;
-  margin: 8px auto !important;
-  width: 1000px;
-  padding: 16px 24px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=forms.css.map */
