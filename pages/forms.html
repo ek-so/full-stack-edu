@@ -20,6 +20,184 @@
       <a class="tint1" href="/index.html">Back to main page</a>
       <br />
       <a class="primary" href="#" target="_blank">Link</a>
+      <form action="/pages/forms.html" method="GET">
+        <!--using form tag is important, because it allows buttons inside work differently-->
+        <h2>My HTML form</h2>
+        <p>
+          Inspect – Network (control requests for the form, inspect those
+          requests). For GET request data is added to URL, for POST method, the
+          data is added to the request itself (as a metadata attached to it)
+        </p>
+
+        <section id="core">
+          <h3>Core data</h3>
+          <ul>
+            <li>
+              <!--text-->
+              <label for="label-name">Your name</label>
+              <input
+                class="form-element"
+                type="text"
+                name="user-name"
+                id="label-name"
+                placeholder="Kate"
+              />
+            </li>
+            <li>
+              <!--email-->
+              <label for="label-email">Your email</label>
+              <input
+                class="form-element"
+                type="email"
+                name="user-email"
+                id="label-email"
+                placeholder="kate@gmail.com"
+              />
+            </li>
+            <li>
+              <!--password-->
+              <label for="label-password">Set a password</label>
+              <input
+                class="form-element"
+                type="password"
+                name="user-password"
+                id="label-password"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section id="additional">
+          <h3>Additional data</h3>
+          <ul>
+            <li>
+              <!--number-->
+              <label for="label-age">How old are you?</label>
+              <input
+                class="form-element"
+                type="number"
+                name="user-age"
+                id="label-age"
+                step="1"
+                min="1"
+                max="150"
+                value="35"
+              />
+            </li>
+            <li>
+              <!--date-->
+              <label for="label-date">When is your birthday?</label>
+              <input
+                class="form-element"
+                type="date"
+                name="user-date"
+                id="label-date"
+                value="1000-01-01"
+              />
+            </li>
+            <li>
+              <!--select-->
+              <label for="label-answer">Do you like tomatoes?</label>
+              <select class="form-element" name="user-answer" id="label-answer">
+                Select
+                <option value="yes">Yes, I like</option>
+                <option value="no">No, I don't like</option>
+              </select>
+            </li>
+            <li>
+              <!--file-->
+              <label for="label-file">File</label>
+              <input
+                class="form-element"
+                type="file"
+                name="user-file"
+                id="label-file"
+              />
+            </li>
+            <li>
+              <!--textarea-->
+              <label for="label-about">Tell me about yourself</label>
+              <textarea
+                class="form-element"
+                name="user-about"
+                id="label-about"
+                cols="30"
+                rows="5"
+                placeholder="I like..."
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section id="verification">
+          <!--radio group-->
+          <h3>How should we verify your account?</h3>
+          <p>
+            For all inputs in one group
+            <span class="code tint2">name</span> attribute is common, so that
+            selection works correctly.
+          </p>
+          <ul>
+            <li class="option">
+              <input
+                type="radio"
+                name="verify"
+                id="label-message"
+                value="message"
+              />
+              <label class="option-label" for="label-message"
+                >Via text message</label
+              >
+            </li>
+            <li class="option">
+              <input type="radio" name="verify" id="label-call" value="call" />
+              <label class="option-label" for="label-call">Via call</label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="agreement">
+          <!--checkbox group-->
+          <h3>Do you agree?</h3>
+          <p>
+            We don't need to use common
+            <span class="code tint2">name</span> attribute here, selected values
+            may be sent to the server independently. However, if we want to
+            group them and send as a common group, we can still use common
+            <span class="code tint2">name</span>. Values can be either defined,
+            or will be just be sent as ON or OFF
+          </p>
+          <ul>
+            <li class="option">
+              <input
+                type="checkbox"
+                name="agree"
+                id="label-check1"
+                value="checked1"
+              />
+              <label class="option-label" for="label-check1"
+                >I agree with one</label
+              >
+            </li>
+            <li class="option">
+              <input
+                type="checkbox"
+                name="agree"
+                id="label-check2"
+                value="checked2"
+              />
+              <label class="option-label" for="label-check2"
+                >I agree with two</label
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section id="buttons">
+          <button class="button primary">Submit</button>
+          <button class="button secondary">Submit</button>
+        </section>
+      </form>
     </main>
   </body>
 </html>

@@ -1,2 +1,55 @@
 @import "../shared.scss";
 
+form {
+  width: 60%;
+  margin: $size-l auto;
+  padding: $size-xl $size-xxl;
+  background-color: white;
+  border-radius: $size-xs;
+  box-shadow: $shadow;
+  text-align: left;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+label {
+  display: block;
+  box-sizing: border-box;
+  margin: $size-s 0 $size-xs 0;
+  font-size: 0.8rem;
+  color: $text-secondary;
+  text-align: left;
+}
+
+.form-element {
+  display: inline-block; //are inline by default
+  box-sizing: border-box; //important! otherwise all inputs measure size differently
+  width: 100%;
+  padding: $size-s $size-s;
+  margin: $size-xs 0;
+  border-radius: $size-xs;
+  border: 1px solid rgb(213, 212, 212);
+  font-family: $font-main;
+  font-size: 1rem;
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $text-tint1;
+  }
+}
+
+.option {
+  display: flex;
+}
+
+.option-label {
+    width: auto;
+    margin: 0.8rem $size-s;
+    font-size: 1rem !important;
+    color: $text-primary;
+  }
