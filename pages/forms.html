@@ -18,10 +18,9 @@
     <main>
       <h1>Forms</h1>
       <a class="tint1" href="/index.html">Back to main page</a>
-      <br />
-      <a class="primary" href="#" target="_blank">Link</a>
       <form action="/pages/forms.html" method="GET">
         <!--using form tag is important, because it allows buttons inside work differently-->
+        <!--attribute novalidate may be added to the form-->
         <h2>My HTML form</h2>
         <p>
           Inspect – Network (control requests for the form, inspect those
@@ -41,7 +40,8 @@
                 name="user-name"
                 id="label-name"
                 placeholder="Kate"
-              />
+                required
+              /><!--using required we add validation if the input is not empty-->
             </li>
             <li>
               <!--email-->
@@ -62,6 +62,18 @@
                 type="password"
                 name="user-password"
                 id="label-password"
+                required
+                minlength="7"
+              /><!--minimal length-->
+            </li>
+            <li>
+              <!--phone-->
+              <label for="label-tel">Your phone number</label>
+              <input
+                class="form-element"
+                type="tel"
+                name="user-tel"
+                id="label-tel"
               />
             </li>
           </ul>
@@ -79,10 +91,11 @@
                 name="user-age"
                 id="label-age"
                 step="1"
-                min="1"
+                min="10"
                 max="150"
-                value="35"
-              />
+                value="50"
+                placeholder="50"
+              /><!--minimal and maximal value-->
             </li>
             <li>
               <!--date-->
@@ -144,13 +157,20 @@
                 name="verify"
                 id="label-message"
                 value="message"
+                required
               />
               <label class="option-label" for="label-message"
                 >Via text message</label
               >
             </li>
             <li class="option">
-              <input type="radio" name="verify" id="label-call" value="call" />
+              <input
+                type="radio"
+                name="verify"
+                id="label-call"
+                value="call"
+                required
+              /><!--required added to all radiobuttons (doesn't mean all should be checked)-->
               <label class="option-label" for="label-call">Via call</label>
             </li>
           </ul>
@@ -194,8 +214,8 @@
         </section>
 
         <section id="buttons">
-          <button class="button primary">Submit</button>
-          <button class="button secondary">Submit</button>
+          <button class="button primary" type="submit">Submit</button>
+          <button class="button secondary" type="reset">Reset</button>
         </section>
       </form>
     </main>

@@ -21,7 +21,7 @@ ul {
 label {
   display: block;
   box-sizing: border-box;
-  margin: $size-s 0 $size-xs 0;
+  margin: $size-s 0 0 0;
   font-size: 0.8rem;
   color: $text-secondary;
   text-align: left;
@@ -39,17 +39,30 @@ label {
   font-size: 1rem;
   &:focus {
     border-color: transparent;
-    outline: 2px solid $text-tint1;
+    outline: 2px solid $text-tint3;
   }
 }
 
 .option {
-  display: flex;
+  display: flex; //text near radio buttons and checkboxes
 }
 
-.option-label {
+.option-label { 
     width: auto;
     margin: 0.8rem $size-s;
     font-size: 1rem !important;
-    color: $text-primary;
+    color: $text-primary; 
   }
+
+#buttons {
+    display: flex;
+    justify-content: end;
+}
+
+button {
+    margin: $size-m 0.5rem $size-m 0;
+}
+
+textarea {
+    resize: vertical;
+}
