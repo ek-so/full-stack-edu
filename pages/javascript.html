@@ -19,7 +19,10 @@
     <!--in this case, code in linked file will be executed later-->
     <script src="/scripts/basics.js"></script>
     <script src="/scripts/exercise.js"></script>
-    <script src="/scripts/advanced.js"></script>
+    <script src="/scripts/advanced.js" defer></script>
+    <script src="/scripts/changing_html.js" defer></script>
+    <script src="/scripts/events.js" defer></script>
+    <!--defer attribute makes JS executed AFTER all content is loaded-->
   </head>
   <body>
     <main>
@@ -29,9 +32,40 @@
       <p><strong>Values:</strong> text (string), number,</p>
       <p><strong>Variables:</strong> labeled data containers</p>
       <p>Most code here is inside the linked javascript files</p>
-      <a class="primary" href="#" target="_blank">Execute excercise</a><br />
-      <a class="primary" href="#" target="_blank">Execute excercise</a><br />
-      <a class="primary" href="#" target="_blank">Execute excercise</a><br />
+      <h2>Exercises</h2>
+      <div>
+        <h3>DOM drilling</h3>
+        <p>DOM drilling 1</p>
+        <div><p>DOM drilling 2</p></div>
+        <p id="drilling3">DOM drilling 3</p>
+      </div>
+      <div id="exercise2">
+        <h3>Creating new HTML elements</h3>
+      </div>
+      <div id="exercise3">
+        <h3>Removing elements from HTML</h3>
+        <p>Here were 2 paragrapsh that were removed in JS:</p>
+        <p id="exercise31">This is first item to be removed</p>
+        <p id="exercise32">This is second item to be removed</p>
+      </div>
+      <div>
+        <h3>Moving elements</h3>
+        <p id="exercise4">First paragraph</p>
+        <p>Second paragraph</p>
+      </div>
+      <div>
+        <h3>Inner HTML</h3>
+        <p id="exercise5"></p>
+      </div>
+      <div>
+        <h3>Events</h3>
+        <p id="exercise61">Click on the button to change this text</p>
+        <button class="secondary">Click me</button>
+        <p id="exercise62">This text is equal to what you input</p>
+        <input type="text">
+      </div>
+      <br />
+      <br />
     </main>
   </body>
 </html>
