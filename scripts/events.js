@@ -20,3 +20,15 @@ function retrieveUserInput() {
 }
 
 myInput.addEventListener("input", retrieveUserInput);
+
+
+
+//EVENT object exists for every event we are listening to
+function seeEventInner (event) {
+    console.log(event); //we'll see event properties for INPUT event
+    //let enteredText = myInput.value; (that's what we used above)
+    //let enteredText = event.target.value; (that gives the same result)
+    //let enteredText = event.data; (this is getting text from input letter by letter, separately)
+}
+
+myInput.addEventListener("input", seeEventInner);

@@ -44,6 +44,7 @@ let resultOfMultiply = "2" * 3; // 6 => a number
 
 
 //functions
+//all variables (even const) INSIDE function are deleted after the function was executed
 let adultYears; //define variable
 function calculateAdultYears() {
   //define function

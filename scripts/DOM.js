@@ -16,7 +16,6 @@ console.log(parentItem); //returns body element, coz we took a first child of bo
 let nextItem = document.body.firstChild.nextSibling;
 console.log(nextItem);
 
-
 document.body.children[0].children[7].children[1].innerHTML = "Get element in a long complex way (drilling child by child)";
 document.querySelector("div > div > p").innerHTML = "Get element in a more simple way (with CSS selector)";
 //CSS selector selects only FIRST matching element, if you want all, then: querySelectorAll
