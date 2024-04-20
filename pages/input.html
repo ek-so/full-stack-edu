@@ -13,17 +13,57 @@
     <link rel="stylesheet" href="/styles/shared.css" />
     <link rel="stylesheet" href="/styles/input/input.css" />
     <script src="/scripts/input.js" defer></script>
+    <script src="/scripts/cycles_conditions.js" defer></script>
   </head>
   <body>
     <main>
-      <h1>Interactive input made with JS</h1>
+      <h1>Interactive inputs. Loops & conditions</h1>
       <a class="tint1" href="/index.html">Back to main page</a>
+      <h2>Interactive input with symbols count</h2>
       <div>
         <form action="">
-          <input type="text" class="form-element" placeholder="Your text" maxlength="50"/>
+          <input
+            type="text"
+            class="form-element"
+            placeholder="Your text"
+            maxlength="50"
+          />
           <p><span id="count">50</span> of 50 symbols left</p>
           <button class="primary" type="submit">Submit</button>
         </form>
+      </div>
+      <h2>Sum of numbers</h2>
+      <div id="summarize">
+        <form action="">
+          <input
+            type="number"
+            class="form-element"
+            placeholder="Number"
+          /><button class="primary">Calculate</button>
+          <p>Result</p>
+        </form>
+      </div>
+      <h2>Highlighting links</h2>
+      <div id="highlighting">
+        <p>
+          Some text with <a href="#" class="tint1">link one</a>and
+          <a href="#" class="tint1">link two</a> and
+          <a href="#" class="tint1">link four</a> which are supposed to change
+          their color on click.
+        </p>
+        <button class="primary">Highlight</button>
+      </div>
+      <h2>Display user data</h2>
+      <div id="display">
+        <ul></ul>
+        <button class="primary">Display</button>
+      </div>
+      <h2>Roll the dice</h2>
+      <div id="roll">
+        <input type="number" class="form-element" placeholder="Your target" />
+        <ul></ul>
+        <p></p>
+        <button class="primary">Roll</button>
       </div>
     </main>
   </body>

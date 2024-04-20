@@ -184,6 +184,12 @@ form p {
   color: rgb(210, 81, 0);
 }
 
+.error {
+  border: 1px solid red !important;
+  background-color: rgb(255, 191, 191);
+  color: red;
+}
+
 div {
   text-align: left;
   background-color: white;

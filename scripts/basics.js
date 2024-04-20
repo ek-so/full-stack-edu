@@ -25,6 +25,7 @@ let specificProperty = userJob.title;
 //operators
 age = 45; //reset variable – no need in let again as we already introduced it
 let resultOperation = age - (15 + 45) * 3.5 / 4.1; //float-point number, float
+
 //multiply and division has higher priority without brackets
 let resultRemainder = 10 % 4; // 10:4=2.5, or 10:4=2 and 2 (remainder), modulus operator
 age++; //the same as age = age + 1;
@@ -35,6 +36,34 @@ age *= 5; //age = age * 5;
 age /= 5; //age = age / 5;
 age = 4 ** 3; //age = 4 * 4 * 4
 
+//comparison operatiors
+//equality operators
+2 == 2; //true
+2 == 5; //false
+"2" == "b"; //false
+"2" == 2; //true
+"2" === 2; //false, because it compares also value TYPES, so it's better to always use this one
+5 > 3; //true
+"a" < "b"; //true, coz a comes earlier
+"cb" > "ca"; //true, coz c = c, so next letters are compared
+4 >= 2; //false
+!(4 < 4); //true
+5 !== 2; //true
+8 !==8; //false
+"8" != 8; //false, because TYPE is not considered, so 8 = 8
+"8" !== 8; //true, because TYPES ared different
+
+//logical operators
+2 == 2 && 3 < 4; //AND true
+5 == 5 && 6 < 4; //false
+5 == 5 || 3 < 4; //OR true
+5 == 5 || 6 < 4; //true
+!true; //INVERSE, equals false
+!false; //true
+2 === 2 || 2 === 3 && 5 === 6; //true, because first comes AND operator, then all the rest 2 === 2 || (2 === 3 && 5 === 6); true OR false gives true
+(2 === 2 || 2 === 3) && 5 === 6; //false
+
+//concatination:
 let resultStrings = "Kate" + " " + "Sosedova"; //need to add space, otherwise to words will be glued
 console.log(resultStrings);
 let resultOfSummOne = "the number" + 2; // age will be 'the number2' => a string

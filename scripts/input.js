@@ -9,9 +9,16 @@ function updateCount(event) {
   let lengthEntered = enteredText.length; //counts amount of symbols entered
   let remainingLength = lengthMax - lengthEntered;
   lengthCount.textContent = remainingLength;
+
+  if (remainingLength === 0) {
+    myInput.classList.add("error");
+  } else if (remainingLength <= 10) {
+    myInput.classList.remove("error");
+    myInput.classList.add("warning");
+  } else {
+    myInput.classList.remove("warning");
+  }
 }
 
 myInput.addEventListener("input", updateCount);
 
-lengthCount.style.color = "rgb(210, 81, 0)";
-myInput.classList.add("warning");
