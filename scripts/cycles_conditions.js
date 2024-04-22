@@ -57,7 +57,9 @@ function calculateSum() {
   for (let i = 0; i <= userNumberInput; i++) {
     sumUpToNumber = sumUpToNumber + i;
   }
-  document.querySelector("#summarize p").textContent = sumUpToNumber;
+  document.querySelector("#summarize p").textContent =
+    "The result of summing up all numbers up to the entered one is " +
+    sumUpToNumber;
 }
 
 calculateSumButton.addEventListener("click", calculateSum);

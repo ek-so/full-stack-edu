@@ -1,25 +1,4 @@
 @import "../shared.scss";
-form p {
-  margin: 0 0 24px 0;
-  color: $text-secondary;
-}
-
-.form-element {
-  display: inline-block;
-  padding: 0 $size-s;
-  height: 48px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: $size-xs 0;
-  border-radius: $size-xs;
-  border: 1px solid rgb(213, 212, 212);
-  font-family: $font-main;
-  font-size: 1rem;
-  &:focus {
-    border-color: transparent;
-    outline: 2px solid $text-tint3;
-  }
-}
 
 .warning {
   border: 1px solid $text-tint1 !important;

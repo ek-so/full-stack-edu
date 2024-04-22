@@ -11,19 +11,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/tic-tac-toe/tic-tac-toe.css" />
     <!--it's recommended to put the script in a head, it doesn't change execution order-->
     <script>
       //some code
     </script>
     <!--in this case, code in linked file will be executed later-->
-    <script src="/scripts/tic-tac-toe.js" defer></script>
+    <script src="/scripts/tic-tac-toe/game.js" defer></script>
+    <script src="/scripts/tic-tac-toe/config.js" defer></script>
+    <script src="/scripts/tic-tac-toe/app.js" defer></script>
     <!--defer attribute makes JS executed AFTER all content is loaded-->
   </head>
   <body>
+    <div id="backdrop"></div>
     <main>
       <h1>Tic-Tac-Toe Game Project</h1>
+      <p>Built with HTML, CSS & JavaScript</p>
       <a class="tint1" href="/index.html">Back to main page</a>
       <br />
+      <aside class="cardish modal" id="modal-inner">
+        <!--may be used for sidebar or modal-->
+        <h2>Choose your name</h2>
+        <form action="">
+          <div>
+            <label for="playername">Player name</label
+            ><input
+              type="text"
+              name="username"
+              id="playername"
+              class="form-element"
+            />
+            <div>
+              <button type="button" class="secondary" id="cancel">Cancel</button
+              ><button type="submit" class="primary">Confirm</button>
+            </div>
+          </div>
+        </form>
+      </aside>
+      <section id="configuration">
+        <ol>
+          <li class="cardish">
+            <article>
+              <h2>Player one</h2>
+              <h3>Name one</h3>
+              <p>X</p>
+              <button class="secondary" id="edit-player-one">Edit</button>
+            </article>
+          </li>
+          <li class="cardish">
+            <article>
+              <h2>Player two</h2>
+              <h3>Name two</h3>
+              <p>O</p>
+              <button class="secondary" id="edit-player-two">Edit</button>
+            </article>
+          </li>
+        </ol>
+        <button class="primary">Start New Game</button>
+      </section>
+      <section id="game" class="cardish">
+        <article>
+          <h3>You won, <span id="winner-player-name">Player name</span>!</h3>
+          <p>Click the button above to start new game</p>
+        </article>
+
+        <p>It's your turn, <span id="active-player-name">Player name</span>!</p>
+        <ol id="game-board">
+          <li class="disabled">X</li>
+          <li class="disabled">O</li>
+          <li class=""></li>
+
+          <li class=""></li>
+          <li class=""></li>
+          <li class=""></li>
+
+          <li class=""></li>
+          <li class=""></li>
+          <li class=""></li>
+        </ol>
+      </section>
     </main>
   </body>
 </html>

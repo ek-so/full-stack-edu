@@ -11,6 +11,7 @@ h2 {
 } */
 body {
   margin: 0;
+  min-height: 100vh;
   background-color: rgb(243, 241, 235);
   color: rgb(38, 31, 21);
   font-family: Lato, sans-serif;
@@ -161,7 +162,7 @@ form p {
   color: rgb(138, 135, 130);
 }
 
-.form-element {
+input {
   display: inline-block;
   padding: 0 16px;
   height: 48px;
@@ -173,7 +174,7 @@ form p {
   font-family: Lato, sans-serif;
   font-size: 1rem;
 }
-.form-element:focus {
+input:focus {
   border-color: transparent;
   outline: 2px solid rgb(61, 83, 168);
 }
