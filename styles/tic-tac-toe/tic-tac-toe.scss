@@ -49,6 +49,10 @@
   border-radius: $size-s;
 }
 
+.error p {
+  color: red;
+}
+
 #configuration {
   width: 90%;
   margin: 0 auto;

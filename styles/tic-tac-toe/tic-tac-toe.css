@@ -225,6 +225,10 @@ input:focus {
   border-radius: 16px;
 }
 
+.error p {
+  color: red;
+}
+
 #configuration {
   width: 90%;
   margin: 0 auto;
