@@ -265,6 +265,7 @@ input:focus {
   width: 85%;
   margin: 24px auto;
   padding: 24px;
+  display: none;
 }
 #game article {
   background-color: rgb(77, 145, 97);

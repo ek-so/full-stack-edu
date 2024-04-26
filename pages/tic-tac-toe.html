@@ -17,8 +17,8 @@
       //some code
     </script>
     <!--in this case, code in linked file will be executed later-->
-    <script src="/scripts/tic-tac-toe/game.js" defer></script>
     <script src="/scripts/tic-tac-toe/config.js" defer></script>
+    <script src="/scripts/tic-tac-toe/game.js" defer></script>
     <script src="/scripts/tic-tac-toe/app.js" defer></script>
     <!--defer attribute makes JS executed AFTER all content is loaded-->
   </head>
@@ -72,27 +72,27 @@
             </article>
           </li>
         </ol>
-        <button class="primary">Start New Game</button>
+        <button class="primary" id="start-new-game" type="button">Start New Game</button>
       </section>
       <section id="game" class="cardish">
-        <article>
+        <article id="game-over">
           <h3>You won, <span id="winner-player-name">Player name</span>!</h3>
           <p>Click the button above to start new game</p>
         </article>
 
         <p>It's your turn, <span id="active-player-name">Player name</span>!</p>
         <ol id="game-board">
-          <li class="disabled">X</li>
-          <li class="disabled">O</li>
-          <li class=""></li>
+          <li class="" data-row="1" data-col="1"></li>
+          <li class="" data-row="1" data-col="2"></li>
+          <li class="" data-row="1" data-col="3"></li>
 
-          <li class=""></li>
-          <li class=""></li>
-          <li class=""></li>
+          <li class="" data-row="2" data-col="1"></li>
+          <li class="" data-row="2" data-col="2"></li>
+          <li class="" data-row="2" data-col="3"></li>
 
-          <li class=""></li>
-          <li class=""></li>
-          <li class=""></li>
+          <li class="" data-row="3" data-col="1"></li>
+          <li class="" data-row="3" data-col="2"></li>
+          <li class="" data-row="3" data-col="3"></li>
         </ol>
       </section>
     </main>

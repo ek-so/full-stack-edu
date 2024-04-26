@@ -11,7 +11,7 @@ function closePlayerConfig() {
   backdropElement.style.display = "none";
   formElement.firstElementChild.classList.remove("error");
   errorsOutputElement.textContent = "";
-  document.getElementById("username").value = "";; //clear inut before I type second name
+  document.getElementById("username").value = ""; //clear inut before I type second name
 }
 
 function savePlayerConfig(event) {
