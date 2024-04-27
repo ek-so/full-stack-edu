@@ -1,0 +1,20 @@
+main {
+  margin: 40px 80px;
+}
+
+.carousel-inner {
+  border-radius: 20px;
+}
+.carousel-inner img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#parallax-img {
+  height: 600px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}/*# sourceMappingURL=bootstrap.css.map */
