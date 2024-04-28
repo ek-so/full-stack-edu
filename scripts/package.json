@@ -1,0 +1,14 @@
+{
+  "name": "full-stack-edu",
+  "version": "1.0.0",
+  "description": "Getting started with Noda and Express",
+  "main": "app-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ekso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
