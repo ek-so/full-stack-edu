@@ -23,7 +23,7 @@ app.post("/store-user", function (req, res) {
   const existingUsers = JSON.parse(fileData);
   existingUsers.push(userName);
   fs.writeFileSync(filePath, JSON.stringify(existingUsers));
-  res.send("<h1>Username stored!</h1>");
+  res.send("<h1>Username succesfully stored!</h1>");
 });
 
 app.get("/users", function (req, res) {
