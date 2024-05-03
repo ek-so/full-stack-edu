@@ -1,1 +1,34 @@
-[{"name":"Test","address":"Street 1","cuisine":"Italian","website":"https://www.test.com/","description":"Awesome"},{"name":"Test 2","address":"Street 2","cuisine":"Mexican","website":"https://www.test2.com/","description":"Great"},{"name":"Test 3","address":"Street 3","cuisine":"European","website":"https://www.test3.com/","description":"Cool"},{"name":"Test 4","address":"Street 4","cuisine":"Russian","website":"https://www.test4.com/","description":"Super"}]
+[
+  {
+    "id": "r1",
+    "name": "Test",
+    "address": "Street 1",
+    "cuisine": "Italian",
+    "website": "https://www.test.com/",
+    "description": "Awesome"
+  },
+  {
+    "name": "r2",
+    "name": "Test 2",
+    "address": "Street 2",
+    "cuisine": "Mexican",
+    "website": "https://www.test2.com/",
+    "description": "Great"
+  },
+  {
+    "id": "r3",
+    "name": "Test 3",
+    "address": "Street 3",
+    "cuisine": "European",
+    "website": "https://www.test3.com/",
+    "description": "Cool"
+  },
+  {
+    "id": "r4",
+    "name": "Test 4",
+    "address": "Street 4",
+    "cuisine": "Russian",
+    "website": "https://www.test4.com/",
+    "description": "Super"
+  }
+]
