@@ -2,33 +2,33 @@
   {
     "id": "r1",
     "name": "Test",
-    "address": "Street 1",
+    "address": "Teststreet 5, Testcity",
     "cuisine": "Italian",
-    "website": "https://www.test.com/",
-    "description": "Awesome"
+    "website": "https://mytest.com",
+    "description": "It's awesome!"
   },
   {
-    "name": "r2",
+    "id": "r2",
     "name": "Test 2",
-    "address": "Street 2",
-    "cuisine": "Mexican",
-    "website": "https://www.test2.com/",
-    "description": "Great"
+    "address": "Teststreet 10, Testcity 2",
+    "cuisine": "Indian",
+    "website": "https://mygreattest.com",
+    "description": "It's also amazing!"
   },
   {
     "id": "r3",
-    "name": "Test 3",
-    "address": "Street 3",
-    "cuisine": "European",
-    "website": "https://www.test3.com/",
-    "description": "Cool"
+    "name": "Restaurant 3",
+    "address": "Awesomestreet 5, Mycity",
+    "cuisine": "German",
+    "website": "https://awesome.com",
+    "description": "It's amazing! Of course!"
   },
   {
-    "id": "r4",
-    "name": "Test 4",
-    "address": "Street 4",
-    "cuisine": "Russian",
-    "website": "https://www.test4.com/",
-    "description": "Super"
+    "name": "Munich Fines Restaurant",
+    "address": "Greatstreet 5, Munich",
+    "cuisine": "German",
+    "website": "https://munich-awesome.com",
+    "description": "It's in Munich, that's where I live!",
+    "id": "fe79befa-c2ca-4509-851b-d2f21f369757"
   }
 ]
