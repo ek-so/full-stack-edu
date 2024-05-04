@@ -17,3 +17,7 @@ console.log(getAdultYears(person));
 console.log(getAdultYears({ age: person.age})); //passing a copy of object not to overwrite it, same result
 console.log(getAdultYears({...person})); //pulls out all key values of the object and stores in NEW copied object
 
+const hobbies2 = ['Sports', 'Cooking'];
+const newHobbies = hobbies2;
+newHobbies.push('Reading');
+console.log(hobbies2);
