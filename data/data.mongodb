@@ -1,0 +1,3 @@
+use("data");
+
+db.getCollection("restaurants").insertOne({ name: "Curt" });
