@@ -1,21 +1,24 @@
-const { MongoClient } = require("mongodb");
+const mongodb = require('mongodb');
 
-const url = "mongodb+srv://ekso:0VynB3Src65Nv8vj@cluster0.nybop9t.mongodb.net/?retryWrites=true&w=majority";
+const MongoClient = mongodb.MongoClient;
 
-const client = new MongoClient(url);
+let database;
 
-async function run() {
-  try {
-      await client.connect();
-      console.log("Successfully connected to Atlas");
-  } catch (err) {
-      console.log(err.stack);
-  }
-  finally {
-      await client.close();
-  }
+async function connectToDatabase() {
+  const client = await MongoClient.connect(
+    'mongodb://127.0.0.1:27017'
+  );
+  database = client.db('auth-demo');
 }
-run().catch(console.dir);
 
+function getDb() {
+  if (!database) {
+    throw { message: 'You must connect first!' };
+  }
+  return database;
+}
 
-db.posts.insertOne({ name: "Kate" });
+module.exports = {
+  connectToDatabase: connectToDatabase,
+  getDb: getDb,
+};
