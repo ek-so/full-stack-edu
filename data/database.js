@@ -1,22 +1,21 @@
-const mongodb = require('mongodb');
+const { MongoClient } = require("mongodb");
 
-const MongoClient = mongodb.MongoClient;
+const url = "mongodb+srv://ekso:0VynB3Src65Nv8vj@cluster0.nybop9t.mongodb.net/?retryWrites=true&w=majority";
 
-let database;
+const client = new MongoClient(url);
 
-async function connect() {
-  const client = await MongoClient.connect('mongodb://127.0.0.1:27017');
-  database = client.db('blog');
-}
-
-function getDb() {
-  if (!database) {
-    throw { message: 'Database connection not established!' };
+async function run() {
+  try {
+      await client.connect();
+      console.log("Successfully connected to Atlas");
+  } catch (err) {
+      console.log(err.stack);
   }
-  return database;
+  finally {
+      await client.close();
+  }
 }
+run().catch(console.dir);
 
-module.exports = {
-  connectToDatabase: connect,
-  getDb: getDb
-};
+
+db.posts.insertOne({ name: "Kate" });
