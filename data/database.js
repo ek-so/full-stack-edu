@@ -1,24 +1,10 @@
-const mongodb = require('mongodb');
+const mysql = require('mysql2/promise');
 
-const MongoClient = mongodb.MongoClient;
+const pool = mysql.createPool({
+  host: 'localhost',
+  database: 'security',
+  user: 'root',
+  password: 'your-pw'
+})
 
-let database;
-
-async function connectToDatabase() {
-  const client = await MongoClient.connect(
-    'mongodb://127.0.0.1:27017'
-  );
-  database = client.db('auth-demo');
-}
-
-function getDb() {
-  if (!database) {
-    throw { message: 'You must connect first!' };
-  }
-  return database;
-}
-
-module.exports = {
-  connectToDatabase: connectToDatabase,
-  getDb: getDb,
-};
+module.exports = pool;
