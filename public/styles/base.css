@@ -1,9 +1,8 @@
 * {
-  box-sizing: border-box; /* border doesn't count to width of ALL elements */
+  box-sizing: border-box;
 }
 
 html {
-  /* when we define it here in this selector (not in ALL * selector), variables are available to all other elements and it's better for performance */
   font-family: "Montserrat", "sans-serif";
 
   --color-gray-50: rgb(243, 236, 230);
@@ -34,7 +33,7 @@ html {
   --space-6: 1.5rem;
   --space-8: 2rem;
 
-  --border-radius-small: 4px; /* borders are not in rem, coz they stay the same on all resolutions */
+  --border-radius-small: 4px;
   --border-radius-medium: 6px;
 
   --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -52,21 +51,21 @@ main {
   margin: 0 auto;
 }
 
-ul,
+ul, 
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: var(--color-primary-400);
 }
 
 .btn {
-  /* this class can be applied not only to buttons, but for links*/
   cursor: pointer;
-  font: inherit; /* by default buttons DON'T inherit fonts */
+  font: inherit;
   padding: var(--space-2) var(--space-6);
   background-color: var(--color-primary-500);
   color: var(--color-primary-500-contrast);
@@ -78,4 +77,21 @@ a {
 .btn:active {
   background-color: var(--color-primary-700);
   border-color: var(--color-primary-700);
+}
+
+.alert {
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-error-100);
+  color: var(--color-error-500);
+  padding: var(--space-4);
+}
+
+.alert h2 {
+  font-size: 1rem;
+  margin: var(--space-2) 0;
+  text-transform: uppercase;
+}
+
+.alert p {
+  margin: var(--space-2) 0;
 }
