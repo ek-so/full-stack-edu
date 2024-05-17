@@ -1,14 +1,17 @@
-const path = require("path");
+const path = require('path');
 
-const express = require("express");
-const csrf = require("csurf");
+const express = require('express');
+const csrf = require('csurf');
 const expressSession = require('express-session');
 
 const createSessionConfig = require('./config/session');
-const db = require("./data/database");
+const db = require('./data/database');
 const addCsrfTokenMiddleware = require('./middlewares/csrf-token');
-const errorHandlerMiddleware = require("./middlewares/error-handler");
-const authRoutes = require("./routes/auth.routes");
+const errorHandlerMiddleware = require('./middlewares/error-handler');
+const checkAuthStatusMiddleware = require('./middlewares/check-auth');
+const authRoutes = require('./routes/auth.routes');
+const productsRoutes = require('./routes/products.routes');
+const baseRoutes = require('./routes/base.routes');
 
 const app = express();
 
@@ -24,8 +27,11 @@ app.use(expressSession(sessionConfig));
 app.use(csrf()); //need to be done before request reaches routes; checks that all requests have tokens
 
 app.use(addCsrfTokenMiddleware); //need to be added after csrf because it relies on locals that are included there into a session
+app.use(checkAuthStatusMiddleware);
 
+app.use(baseRoutes);
 app.use(authRoutes);
+app.use(productsRoutes);
 
 app.use(errorHandlerMiddleware);
 

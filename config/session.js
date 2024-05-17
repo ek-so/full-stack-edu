@@ -1,6 +1,5 @@
 const expressSession = require("express-session");
 const mongoDbStore = require("connect-mongodb-session");
-  
 
 function createSessionStore() {
   const MongoDBStore = mongoDbStore(expressSession);
