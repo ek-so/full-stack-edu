@@ -19,6 +19,7 @@
     "mogodb": "^0.0.1-security",
     "mongodb": "^4.1.0",
     "multer": "^1.4.3",
+    "stripe": "^15.7.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
